@@ -1,0 +1,156 @@
+/* styles.css */
+
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Hero Section */
+
+.titulo{
+    text-shadow: 2px 3px 4px black;
+}
+.line{
+    text-shadow: 2px 3px 4px black;
+}
+
+.hero {
+    background-image: url('earth_comet.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative; 
+    z-index: 0;/* add this */
+}
+
+.hero-logo {
+    position: absolute; /* add this */
+    width: 200px;
+    top: 20%; /* adjust the top position */
+    left: 50%; /* adjust the left position */
+    transform: translate(-50%, -50%); /* center the logo */
+    z-index: 1; /* bring the logo to the front */
+    
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 3px;
+    position: relative; /* add this */
+    z-index: 2; /* bring the title to the front */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero a {
+    background-color: #33333300;
+    color: #fff;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1x solid white;
+}
+
+.hero a:hover {
+    background-color: #444;
+}
+
+/* Sobre Section */
+
+#sobre {
+    padding: 20px;
+}
+
+#sobre h2 {
+    margin-top: 0;
+}
+
+#sobre p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#sobre img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+/* Explorar Section */
+
+#explorar {
+    padding: 20px;
+}
+
+#explorar h2 {
+    margin-top: 0;
+}
+
+#explorar p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#explorar button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#explorar button:hover {
+    background-color: #444;
+}
+
+.explore_button{
+    border: 1px solid white;
+}
+
+/* Footer Section */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}

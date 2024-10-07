@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo 2';
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+  height: 100vh; 
+}
+
+#arise-logo{
+  position: absolute;
+  width: 50px;
+  bottom: 8px;
+  left: 50%;
+  padding-bottom: 10px;
+}
+.img-responsive{
+  max-width: 400px;
+}
+#arise-logo{
+  position: absolute;
+  width: 50px;
+  bottom: 8px;
+  left: 50%;
+  padding-bottom: 10px;
+}
+
+#detail-modal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(32, 32, 32, 0.045);
+  backdrop-filter: blur(10px); 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  gap: 8px;
+  color: rgb(155, 148, 148); 
+  transition: right 0.3s ease; 
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5); 
+}
+
+.close-button{
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(255, 255, 255, 0.271);
+  border-radius: 5px;
+  padding: 5px;
+  margin-inline:10px;
+  color: white;
+  cursor: pointer;
+  transition: .6s;
+}
+.close-button:hover{
+  background-color: white;
+  color: black;
+  transition: .4s;
+}
+
+.meteor-detail {
+  background-color: rgba(0, 0, 0, 0); 
+  padding: 10px;
+  height: 250px;
+  min-width: 300px;
+  border-radius: 10px;
+}
+
+.meteor-title {
+  background-color: rgba(0, 0, 0, 0); 
+  border-radius: 10px;
+  padding: 10px;
+  padding-inline: 30px;
+}
+
+.detail-data {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.083);
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: rgb(155, 148, 148); 
+  transition: right 0.3s ease; 
+  background-color: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(10px); 
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  font-size: 24px; 
+  cursor: pointer; 
+  font-family: 'Orbitron', sans-serif;
+  color: white; 
+  margin-left: auto; 
+}
+.adm{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+.menu-options {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-start; 
+  gap: 8px;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.search-box {
+  flex: 1; 
+  background-color: rgba(168, 154, 154, 0.5);
+  color: white;
+  border: none;
+  padding: 5px; 
+  margin-bottom: 0; 
+  height: 35px;
+}
+
+.menu:hover .menu-options {
+  background-color: transparent; 
+}
+
+.comet-item {
+  width: 300px; 
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  text-align: center; 
+}
+
+.comet-item:hover {
+  background-color: rgba(168, 154, 154, 0.5);
+}
